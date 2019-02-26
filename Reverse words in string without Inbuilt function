@@ -1,0 +1,18 @@
+a="This is new"
+tmp=""
+new=[]
+rev_string=[]
+
+for i in a:
+    if i==" ":
+        new.append(tmp)
+        tmp=""
+    else:
+        tmp=tmp+i
+if tmp:
+    new.append(tmp)
+print(new)
+
+for i in range ( (len(new)-1),-1,-1):
+    rev_string.append(new[i])
+print(" ".join(rev_string))
