@@ -1,0 +1,15 @@
+a=[10,3,24,21,4,8]
+b=[]
+
+while a:
+    minimum=a[0]
+    for i in a:
+        if i<minimum:
+            minimum=i
+
+    b.append(minimum)
+    a.remove(minimum)
+
+k=int(input("Enter the largest element you want"))
+
+print("The ",k," Largest Element is ",b[len(b)-k])
