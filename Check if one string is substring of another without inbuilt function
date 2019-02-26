@@ -1,0 +1,17 @@
+a="This is new"
+b="new"
+
+start=0
+end=0
+
+while start<len(a):
+    if a[start+end]!=b[end]:
+        start=start+1
+        end=0
+        continue
+    
+    end=end+1
+    
+    if end == len(b):
+        print("Present")
+print("Not Present")
