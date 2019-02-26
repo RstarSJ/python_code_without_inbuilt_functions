@@ -1,0 +1,12 @@
+def findlar(sentence):
+    if not sentence:
+        return "00"
+    else:
+        s=sentence.split(" ")
+        ln=[i for i in s if len(i)%2==0 and len(i)>1]
+        if len(ln)==0:
+            return "00"
+        else:
+            return max(ln,key=len)
+string="This is how you should aware of"
+print(findlar(string))
