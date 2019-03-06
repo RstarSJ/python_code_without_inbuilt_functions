@@ -1,0 +1,13 @@
+import datetime
+from datetime import date
+import calendar
+
+datee=input("Enter date in yyyy-mm-dd format:")
+
+datee_format=datetime.datetime.strptime(datee,"%Y-%m-%d")
+
+print(calendar.day_name[datee_format.weekday()])
+
+print(calendar.month_name[datee_format.month])
+
+print(datee_format.year)
