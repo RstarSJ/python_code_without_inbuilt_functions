@@ -1,0 +1,9 @@
+import numpy as np
+
+a=np.array([[1,2],[2,3],[3,4],[4,5]])
+print(a)
+
+result=[[a[i][j] for i in range (len(a))] for j in range (len(a[0]))]
+
+for i in result:
+    print(i)
