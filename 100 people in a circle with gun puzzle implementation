@@ -1,0 +1,17 @@
+a=int(input("Enter the number of prisoners:"))
+
+for i in range (1,100):
+    if 2**i > a:
+        b=2**i
+        break
+print(b)      ### find the “Power of 2” immediately greater than N
+
+c=(b-1)-a
+print(c)
+
+d=c*2
+print(d)
+
+ans=(b-1)-d
+
+print("The last Person survived is",ans)
