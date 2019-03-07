@@ -1,0 +1,16 @@
+import re
+a="t,h,i,s i.s. ,n,e,w ,w,en ,s,i. /siht?"
+
+b=re.compile(r'[`~!@#$%^&*()_{}\|:;\,.<>?/]')
+c=[]
+new=b.sub("",a)
+
+for i in range (len(new)-1 , -1,-1):
+    c.append(new[i])
+
+new1="".join(c)
+
+if new1==new:
+    print("Yes")
+else:
+    print("No")
