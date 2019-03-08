@@ -1,0 +1,13 @@
+a=[1,2,"shubham",3,5,"is",2,4,"hardworking","2"]
+
+b=[]
+c=[]
+
+for i in a:
+    if isinstance(i,int):
+        b.append(i)
+    else:
+        c.append(i)
+
+print(b)
+print(c)
