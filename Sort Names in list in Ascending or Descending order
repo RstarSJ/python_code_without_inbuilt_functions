@@ -1,0 +1,13 @@
+names=["shubham","rahul","deepak","vikas","Ravi"]
+
+#ascending order
+
+new_list=sorted(names,key=str.lower)
+
+print(new_list)
+
+#descending order
+
+new_list1=sorted(names,key=str.lower,reverse=True)
+
+print(new_list1)
