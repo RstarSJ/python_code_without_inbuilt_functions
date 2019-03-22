@@ -8,3 +8,15 @@ else:
     print("No")
 
 
+---------------------------------------------
+
+num=int(input("Enter your Number"))
+power=int(input("Enter the power to check"))
+
+while num>1:
+    num=num/power
+    
+if num==1:
+    print("YES")
+else:
+    print("NO")
